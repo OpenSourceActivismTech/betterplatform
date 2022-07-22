@@ -17,7 +17,6 @@ Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind
 | ------------------------------------------------------------------------------------------------------------- |
 
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
 
 ## Getting Started
 
@@ -26,13 +25,13 @@ Detailed instructions are available in my blog. [Check it out](https://blog.surj
 ### 1\. Clone this Repository
 
 ```
-git clone https://github.com/surjithctly/neat-starter.git
+git clone https://github.com/OpenSourceActivismTech/betterplatform.git
 ```
 
 ### 2\. Navigate to the directory
 
 ```
-cd neat-starter
+cd betterplatform
 ```
 
 ### 3\. Install dependencies
