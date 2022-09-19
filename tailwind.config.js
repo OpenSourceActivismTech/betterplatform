@@ -5,7 +5,13 @@ module.exports = {
       center: true,
     },
     extend: {
-      colors: {},
+      colors: {
+        'better-purple': '#6F00D0',
+        'better-yellow': '#FFEA9E',
+        'better-blue': '#009DF6',
+        'better-teal': '#5CEFDB',
+        'better-red': '#FF2737',
+      },
     },
   },
   variants: {},
