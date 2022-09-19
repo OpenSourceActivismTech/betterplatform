@@ -52,9 +52,9 @@ npm run start
 
 ## Team
 
-Josh Levinger ( [@jlev](https://spacedog.xyz/) )
-Emily Martinez ( [@Resonator11](https://somethingnothing.me/) )
+- Josh Levinger ( [@jlev](https://spacedog.xyz/) )
+- Emily Martinez ( [@Resonator11](https://somethingnothing.me/) )
 
 ## Template Author
 
-Surjith S M ( [@surjithctly](https://surjithctly.in/) )
+- Surjith S M ( [@surjithctly](https://surjithctly.in/) )
