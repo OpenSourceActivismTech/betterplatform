@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ["./**/*.html"],
   theme: {
@@ -11,6 +13,9 @@ module.exports = {
         'better-blue': '#009DF6',
         'better-teal': '#5CEFDB',
         'better-red': '#FF2737',
+      },
+      fontFamily: {
+        sans: ["Inter",  ...defaultTheme.fontFamily.sans],
       },
     },
   },
