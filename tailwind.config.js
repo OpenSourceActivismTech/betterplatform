@@ -13,6 +13,7 @@ module.exports = {
         'better-blue': '#009DF6',
         'better-teal': '#5CEFDB',
         'better-red': '#FF2737',
+        'strong-yellow': '#F9FC00',
       },
       fontFamily: {
         sans: ["Inter",  ...defaultTheme.fontFamily.sans],

@@ -2,6 +2,7 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -51,6 +52,18 @@ module.exports = function (eleventyConfig) {
     }
 
     return content;
+  });
+
+  // render SVG inline
+  eleventyConfig.addShortcode("svg", function (file) {
+    let relativeFilePath = `./src/${file}`;
+    let data = fs.readFileSync(relativeFilePath, 
+    function(err, contents) {
+       if (err) return err
+       return contents
+    });
+
+    return data.toString('utf8');
   });
 
   // Let Eleventy transform HTML files as nunjucks
