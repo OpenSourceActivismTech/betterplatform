@@ -56,8 +56,13 @@ body pre[class*="language-"] {
   display: none;
 }
 
-.can_embed .international_link-wrap, .can_embed .country_drop_wrap {
-  @apply block
+.can_embed .country_drop_wrap.hide {
+  display: none;
+}
+
+.can_embed .js-form-country, .can_embed .can_selectInner {
+  width: 100% !important;
+  /* IDK, :shrug: */
 }
 
 .can_embed input, .can_embed textarea {
