@@ -22,3 +22,61 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
+
+/* ActionNetwork embed overrides */
+.can_embed li {
+  list-style-type: none;
+}
+
+.can_embed .ajax-loading {
+  display:none;
+}
+
+.can_embed #action_info, .can_embed #logo_wrap {
+  display: none;
+}
+
+.can_embed form {
+  @apply flex flex-col space-y-4;
+}
+
+.can_embed #form_col2 {
+  @apply mt-2;
+}
+
+.can_embed h1 {
+  @apply text-4xl;
+}
+
+.can_embed h2, .can_embed h4:not(.widget_title) {
+  display: none;
+}
+
+.can_embed label {
+  display: none;
+}
+
+.can_embed .international_link-wrap, .can_embed .country_drop_wrap {
+  @apply block
+}
+
+.can_embed input, .can_embed textarea {
+  @apply w-full p-2 mb-4 border-2 border-better-red bg-better-yellow text-better-red placeholder-better-red
+}
+
+.can_embed input[type="submit"], .can_embed a > span > strong {
+  @apply p-3 text-better-yellow bg-better-red inline-block mb-2
+}
+
+.can_embed a.tooltip {
+  display:none;
+}
+
+.can_embed #referral_code_select_wrap {
+  display: none;
+}
+
+/* last can_thank_you-block appears to be an embedded form */
+.can_embed .can_thank_you-block:last-of-type {
+  display:none;
+}
