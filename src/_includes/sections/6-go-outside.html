@@ -1,5 +1,14 @@
 <div class="full-screen flex p-0 flex-col text-yellow-200">
-  <div class="w-full h-full grow bg-cover bg-center bg-[url('/static/img/touch-grass-1.gif')]">
+  <div class="w-full h-full grow bg-cover bg-center"
+    x-data="{ gifs: ['/static/img/touch-grass-1.gif',
+                     '/static/img/touch-grass-2.gif',
+                     '/static/img/touch-grass-3.gif',
+                     '/static/img/touch-grass-4.gif']
+            }"
+    x-init="let bg = gifs[Math.floor(Math.random()*gifs.length)];
+            $el.style.backgroundImage = `url('${bg}')`;
+    "
+  >
     <h2 class="mt-[50vh] text-center">
       Go outside, touch grass.
     </h2>
