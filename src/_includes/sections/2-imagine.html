@@ -2,7 +2,17 @@
   <div class="md:w-1/2">
     <h1 class="text-left text-5xl">
       Imagine a platform where...<br/>
-      you don't have to worry about trolls
+    </h1>
+    <h1 class="text-left text-5xl"
+      x-init="
+      typewriter = new Typewriter($el, {
+        strings: [
+          'you don\'t have to worry about trolls',
+        ],
+        loop: true,
+        autoStart: true,
+      });">
+      
     </h1>
   </div>
 
