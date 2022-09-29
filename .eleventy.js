@@ -29,6 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
+    "./node_modules/@alpinejs/intersect/dist/cdn.min.js": "./static/js/alpine-intersect.js",
     "./node_modules/typewriter-effect/dist/core.js": "./static/js/typewriter.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css":
       "./static/css/prism-tomorrow.css",
