@@ -18,6 +18,10 @@ module.exports = {
       fontFamily: {
         sans: ["Inter",  ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        base: ['1rem', '1.5'],
+        "5xl": ['3rem', '1.2']
+      }, // need to define 2nd param for line-height explicitly, otherwise we end up with 1
     },
   },
   variants: {},
