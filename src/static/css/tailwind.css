@@ -4,6 +4,10 @@
 
 /*Your Custom CSS Goes here*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 .full-screen {
   @apply w-screen min-h-screen md:flex justify-center items-center;
 }
