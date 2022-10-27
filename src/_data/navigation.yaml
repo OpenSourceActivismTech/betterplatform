@@ -1,8 +1,11 @@
 ---
 items:
-  - text: 🦜 Imagine    
+  - icon: 🦜
+    text: Imagine
     url: "#imagine"
-  - text: 💬 Discuss
+  - icon: 💬
+    text: Discuss
     url: "#discuss"
-  - text: 🌈 Join
+  - icon: 🌈
+    text: Join
     url: "#join"
