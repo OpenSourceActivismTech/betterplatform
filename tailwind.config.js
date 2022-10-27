@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./**/*.html"],
@@ -8,19 +8,20 @@ module.exports = {
     },
     extend: {
       colors: {
-        'better-purple': '#6F00D0',
-        'better-yellow': '#FFEA9E',
-        'better-blue': '#009DF6',
-        'better-teal': '#5CEFDB',
-        'better-red': '#FF2737',
-        'strong-yellow': '#F9FC00',
+        "better-purple": "#6F00D0",
+        "better-yellow": "#FFEA9E",
+        "better-blue": "#009DF6",
+        "better-teal": "#5CEFDB",
+        "better-red": "#BE123C",
+        "strong-yellow": "#F9FC00",
+        "better-green": "#166534",
       },
       fontFamily: {
-        sans: ["Inter",  ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        base: ['1rem', '1.5'],
-        "5xl": ['3rem', '1.2']
+        base: ["1rem", "1.5"],
+        "5xl": ["3rem", "1.2"],
       }, // need to define 2nd param for line-height explicitly, otherwise we end up with 1
     },
   },
