@@ -10,11 +10,10 @@
       typewriter = new Typewriter($el, {
         strings: [
           'you don\'t have to worry about trolls',
-          'you own and control your personal data',
-          'you have a say in how the platform works',
-          'the algorithm doesn\'t determine your experience',
           'you can resolve disputes respectfully',
-          'you can meet the needs of your community',
+          'you have a say in how it works',
+          'the algorithm doesn\'t determine your experience',
+          'you own and control your personal data',
         ].map(x => [Math.random(), x]).sort(([a], [b]) => a - b).map(([_, x]) => x),
         loop: true,
         autoStart: true,
