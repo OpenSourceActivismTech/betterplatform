@@ -64,6 +64,11 @@ body pre[class*="language-"] {
   display: none;
 }
 
+/* hide all international inputs */
+.can_embed .international_link-wrap {
+  display: none;
+}
+
 .can_embed .js-form-country, .can_embed .can_selectInner {
   width: 100% !important;
   /* IDK, :shrug: */
