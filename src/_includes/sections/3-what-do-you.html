@@ -2,18 +2,18 @@
   class="full-screen p-8 md:p-16 flex-row bg-better-blue text-black"
   id="discuss"
 >
-  <div class="md:w-1/2 text-center" x-data="{open: false, text:''}">
+  <div class="md:w-1/2 text-center" x-data="{text:''}">
     <h1 class="text-5xl" id="imagine-label">
       What do you imagine?
     </h1>
     <input
       class="text-center text-black-100 bg-transparent border-b-2 focus:outline-none border-black w-3/4 my-2 py-2"
-      x-on:input.debounce.500="open = true; text=`I imagine ${$el.value}`"
+      x-on:input.debounce.500="text=`I imagine ${$el.value}`"
       x-intersect="$el.focus()"
       aria-labelledby="imagine-label"
     />
 
-    <div class="bg-black text-better-blue py-2 my-2 w-2/3 m-auto" x-show="open">
+    <div class="bg-black text-better-blue py-2 my-2 w-2/3 m-auto">
       <a
         x-bind:href="`https://twitter.com/intent/tweet/?text=${encodeURIComponent(text)}&via=betterplatform_`"
         target="_blank"
