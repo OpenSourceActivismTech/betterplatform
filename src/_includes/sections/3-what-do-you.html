@@ -7,7 +7,7 @@
       What do you imagine?
     </h1>
     <input
-      class="text-center text-black-100 bg-transparent border-b-2 focus:outline-none border-black w-3/4 my-2 py-2"
+      class="text-center text-black-100 bg-transparent border-b-2 rounded-none focus:outline-none border-black w-3/4 my-2 py-2"
       x-on:input.debounce.500="text=`I imagine ${$el.value}`"
       x-intersect="$el.focus()"
       aria-labelledby="imagine-label"
