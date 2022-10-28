@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
 }
 
+button > svg {
+  height: 100%;
+  min-width: 36px;
+}
+
 .full-screen {
   @apply w-screen min-h-screen md:flex justify-center items-center;
 }

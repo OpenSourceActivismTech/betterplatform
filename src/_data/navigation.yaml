@@ -1,11 +1,11 @@
 ---
 items:
-  - icon: 🦜
+  - icon: /static/twemoji/parrot_1f99c.svg
     text: Imagine
     url: "#imagine"
-  - icon: 💬
+  - icon: /static/twemoji/speech-balloon_1f4ac.svg
     text: Discuss
     url: "#discuss"
-  - icon: 🌈
+  - icon: /static/twemoji/rainbow_1f308.svg
     text: Join
     url: "#join"
