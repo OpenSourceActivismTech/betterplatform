@@ -1,29 +1,29 @@
 <div
-  class="full-screen p-8 md:p-16 flex-row bg-better-blue text-black"
+  class="full-screen p-4 flex-row bg-better-blue text-black"
   id="discuss"
 >
-  <div class="md:w-1/2 text-center" x-data="{text:''}">
-    <h1 class="text-5xl" id="imagine-label">
+  <div class="md:w-full text-center" x-data="{text:''}">
+    <h1 class="text-5xl font-bold" id="imagine-label">
       What do you imagine?
     </h1>
     <input
-      class="text-center text-black-100 bg-transparent border-b-2 rounded-none focus:outline-none border-black w-3/4 my-2 py-2"
+      class="text-center text-black-100 bg-transparent border-b-2 rounded-none focus:outline-none border-black w-1/2 my-2 py-2"
       x-on:input.debounce.500="text=`I imagine ${$el.value}`"
       x-intersect="$el.focus()"
       aria-labelledby="imagine-label"
     />
 
-    <div class="bg-black text-better-blue py-2 my-2 w-2/3 m-auto">
+    <div class="bg-black text-better-blue py-2 my-2 w-2/3 m-auto text-center">
       <a
         x-bind:href="`https://twitter.com/intent/tweet/?text=${encodeURIComponent(text)}&via=betterplatform_`"
         target="_blank"
-        class="block w-full rounded-none"
+        class="block w-1/2 rounded-none m-auto"
         >tweet it</a
       >
     </div>
   </div>
 
-  <div class="md:w-1/2 mt-8 md:mt-0">
+  <div class="md:w-1/2 pt-16 md:mt-0 sm:w-1/2 sm:m-auto">
     <img
       src="/static/img/bird3.webp"
       alt="Green tropical bird on a branch that wants to help you tweet your imagination"
