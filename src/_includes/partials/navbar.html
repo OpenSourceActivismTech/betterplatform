@@ -1,4 +1,4 @@
-<div class="w-full bg-better-purple">
+<div class="w-screen bg-better-purple">
   <nav
     class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto"
     x-data="{ isOpen: false }"
@@ -9,7 +9,7 @@
     <div class="flex items-center">
       <a
         href="https://twitter.com/betterplatform_"
-        class="text-better-teal font-bold text-lg"
+        class="text-better-teal font-black text-lg"
       >
         @BetterPlatform_</a
       >
@@ -28,7 +28,7 @@
 
     <!--Menu-->
     <div
-      class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center font-bold"
+      class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center font-black"
       :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }"
       x-show.transition="true"
     >
